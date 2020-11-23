@@ -13,16 +13,38 @@ html,body{
     width: 20%;
     height: 100%;
     position: fixed;
-    background-color: rgb(78, 14, 138);
-    color: white;
-    
+    background-color: rgb(78, 14, 138);    
 }
 
-.img-sidebar img{ 
-    width: 50%;
-    border: 4px solid #710c92;
-    border-radius: 60%;
-    position: relative center ;
-   
+.sidebar-pos{
+    position: absolute;
+    top: 50%;
+    transform:translateY(-50%);
+}
 
+.img-sidebar{text-align: center;}
+
+.img-sidebar img{ 
+    width: 120%;
+    border: 4px solid #aa24d6;
+    border-radius: 60%;
+}
+
+
+.menu {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.menu a{
+    color: white;
+    opacity: 0.6;
+    font-size: larger;
+    display: block;
+    margin-bottom: 10%;
+    text-decoration: none;
+    }
+
+.menu a.selected{
+    opacity:0.9;
 }
